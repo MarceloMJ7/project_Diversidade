@@ -1,0 +1,40 @@
+.hero {
+    height: 100vh;
+    background-image: url("diversidade.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  /* overlay */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 172, 193, 0.75);
+  }
+  
+  /* garante que o conteúdo fique acima do overlay */
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* cards */
+  .hero-card {
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    color: #263238;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hero-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  }
+  
+  .hero-card .card-body {
+    padding: 30px;
+  }
+  
