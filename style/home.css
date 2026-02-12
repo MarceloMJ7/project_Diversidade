@@ -1,40 +1,60 @@
+body {
+  margin: 0;
+}
+
 .hero {
-    height: 100vh;
-    background-image: url("diversidade.jpg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  /* overlay */
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 172, 193, 0.75);
-  }
-  
-  /* garante que o conteúdo fique acima do overlay */
-  .hero .container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  /* cards */
-  .hero-card {
-    text-decoration: none;
-    border: none;
-    font-weight: bold;
-    color: #263238;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .hero-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-  }
-  
-  .hero-card .card-body {
-    padding: 30px;
-  }
-  
+  min-height: 100vh;
+  padding: 60px 0;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('/img/Artes.jpg') center/cover no-repeat;
+}
+
+.hero-card {
+  padding: 30px;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 3px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.flag-card {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: bold;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.flag-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  border-radius: 15px;
+}
+
+.flag-card {
+  position: relative;
+  z-index: 1;
+}
+
+.flag-card span {
+  position: relative;
+  z-index: 2;
+}
+
+.brasil {
+  background-image: url('/img/brasil.png');
+}
