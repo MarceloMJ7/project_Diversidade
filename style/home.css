@@ -1,60 +1,90 @@
+/* RESET */
 body {
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+/* HERO SECTION */
 .hero {
   min-height: 100vh;
-  padding: 60px 0;
-  background: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  padding: 100px 0 60px 0;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
     url('/img/Artes.jpg') center/cover no-repeat;
 }
 
-.hero-card {
-  padding: 30px;
-  text-decoration: none;
-  border-radius: 15px;
+/* TÍTULO */
+.hero h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* CARDS DOS PAÍSES */
+.country-card {
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
   font-weight: bold;
-  font-size: 1.1rem;
-  color: #fff;
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  border: 3px solid rgba(255,255,255,0.2);
-  transition: all 0.3s ease;
-}
-
-.hero-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-}
-
-.flag-card {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
-  color: white;
-  font-weight: bold;
-  padding: 60px 20px;
-  position: relative;
+  transition: all 0.4s ease;
 }
 
-.flag-card::before {
+/* Overlay escuro */
+.country-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
-  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.55);
+  transition: 0.3s;
 }
 
-.flag-card {
-  position: relative;
-  z-index: 1;
-}
-
-.flag-card span {
+/* Texto acima do overlay */
+.country-card span {
   position: relative;
   z-index: 2;
+  letter-spacing: 1px;
 }
 
+/* Hover elegante */
+.country-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.country-card:hover::before {
+  background: rgba(0,0,0,0.35);
+}
+
+/* IMAGENS DAS BANDEIRAS */
 .brasil {
   background-image: url('/img/brasil.png');
+}
+
+.japao {
+  background-image: url('/img/Flag_of_Japan.svg.png');
+}
+
+.tailandia {
+  background-image: url('/img/Flag_of_Thailand.svg.png');
+}
+
+.coreia {
+  background-image: url('/img/Flag_of_South_Korea.svg.png');
+}
+
+.china {
+  background-image: url('/img/china.png');
 }
