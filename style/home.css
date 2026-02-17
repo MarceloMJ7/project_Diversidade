@@ -1,7 +1,7 @@
 /* RESET */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 /* HERO SECTION */
@@ -9,8 +9,8 @@ body {
   min-height: 100vh;
   padding: 100px 0 60px 0;
   background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url('/img/Artes.jpg') center/cover no-repeat;
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("/project_Diversidade/img/Artes.jpg") center/cover no-repeat;
 }
 
 /* TÍTULO */
@@ -61,30 +61,30 @@ body {
 /* Hover elegante */
 .country-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .country-card:hover::before {
-  background: rgba(0,0,0,0.35);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 /* IMAGENS DAS BANDEIRAS */
 .brasil {
-  background-image: url('/img/brasil.png');
+  background-image: url("/img/brasil.png");
 }
 
 .japao {
-  background-image: url('/img/Flag_of_Japan.svg.png');
+  background-image: url("/img/Flag_of_Japan.svg.png");
 }
 
 .tailandia {
-  background-image: url('/img/Flag_of_Thailand.svg.png');
+  background-image: url("/img/Flag_of_Thailand.svg.png");
 }
 
 .coreia {
-  background-image: url('/img/Flag_of_South_Korea.svg.png');
+  background-image: url("/img/Flag_of_South_Korea.svg.png");
 }
 
 .china {
-  background-image: url('/img/china.png');
+  background-image: url("/img/china.png");
 }
