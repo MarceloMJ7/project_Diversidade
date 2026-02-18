@@ -1,7 +1,13 @@
-.bg-login{
-    background: linear-gradient(135deg, #00acc1, #00838f)
+.bg-login {
+  background: url("../img/login.jpg") center center no-repeat;
+  background-size: cover;
 }
 
-.btn-primary{
-    background: linear-gradient(135deg, #00acc1, #00838f)
+.btn-primary {
+  background: linear-gradient(135deg, #00acc1, #111111);
+  border: none;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
 }

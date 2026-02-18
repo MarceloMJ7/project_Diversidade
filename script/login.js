@@ -1,18 +1,18 @@
 document.getElementById("login").addEventListener("submit", function (e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const usuario = document.getElementById("emailLogin").value;
-    const senha = document.getElementById("senha").value;
+  const usuario = document.getElementById("emailLogin").value.trim();
+  const senha = document.getElementById("senha").value.trim();
 
-    const usuarioValido = "admin";
-    const senhaValida = "123";
-    const erro = document.getElementById("erro");
-    erro.innerText = "";
+  const usuarioValido = "admin";
+  const senhaValida = "123";
+  const erro = document.getElementById("erro");
+  erro.innerText = "";
 
-    if (usuario === usuarioValido && senha === senhaValida) {
-        localStorage.setItem("logado", "true");
-        window.location.href = "home.html";
-    } else {
-        erro.innerText = "Usuário ou senha inválidos";
-    }
-})
+  if (usuario === usuarioValido && senha === senhaValida) {
+    localStorage.setItem("logado", "true");
+    window.location.href = "home.html";
+  } else {
+    erro.innerText = "Usuário ou senha inválidos";
+  }
+});

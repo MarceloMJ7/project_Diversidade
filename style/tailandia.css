@@ -3,12 +3,12 @@ body {
   font-family: "Segoe UI", sans-serif;
 }
 
-.brasil {
+.tailandia {
   min-height: 100vh;
   padding: 100px 0 60px 0;
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("/project_Diversidade/img/capoeira.jpg") center/cover no-repeat;
+    url("/project_Diversidade/img/muai_thay.jpg") center/cover no-repeat;
 }
 
 .box {

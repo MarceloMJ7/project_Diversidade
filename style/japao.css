@@ -1,10 +1,9 @@
-/* RESET */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
 }
 
-.china {
+.japao {
   min-height: 100vh;
   padding: 100px 0 60px 0;
   background:
@@ -12,25 +11,13 @@ body {
     url("/project_Diversidade/img/sumô.jpg") center/cover no-repeat;
 }
 
-.sbox {
-  background-color: rgba(33, 37, 41, 0.1) !important;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  color: white;
-  border-radius: 15px;
-  padding: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .box {
   color: white;
 }
-.col-md-7 h2 {
-  text-align: center;
-}
 
 .container ul {
-  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
 }
 
 .container a {

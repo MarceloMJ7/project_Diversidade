@@ -1,16 +1,15 @@
-/* RESET */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   min-height: 100vh;
   padding: 100px 0 60px 0;
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("/project_Diversidade/img/Artes.jpg") center/cover no-repeat;
+    url("../img/Artes.jpg") center/cover no-repeat;
 }
 
 /* TÍTULO */
@@ -24,7 +23,7 @@ body {
   opacity: 0.9;
 }
 
-/* CARDS DOS PAÍSES */
+/* CARDS */
 .country-card {
   height: 150px;
   border-radius: 20px;
@@ -42,7 +41,7 @@ body {
   transition: all 0.4s ease;
 }
 
-/* Overlay escuro */
+/* Overlay */
 .country-card::before {
   content: "";
   position: absolute;
@@ -51,14 +50,12 @@ body {
   transition: 0.3s;
 }
 
-/* Texto acima do overlay */
 .country-card span {
   position: relative;
   z-index: 2;
   letter-spacing: 1px;
 }
 
-/* Hover elegante */
 .country-card:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -68,23 +65,24 @@ body {
   background: rgba(0, 0, 0, 0.35);
 }
 
-/* IMAGENS DAS BANDEIRAS */
+/* Imagens */
 .brasil {
-  background-image: url("/img/brasil.png");
+  background-image: url("../img/brasil.png");
 }
 
 .japao {
-  background-image: url("/img/Flag_of_Japan.svg.png");
+  background-image: url("../img/Flag_of_Japan.svg.png");
 }
 
 .tailandia {
-  background-image: url("/img/Flag_of_Thailand.svg.png");
+  background-image: url("../img/Flag_of_Thailand.svg.png");
+  background-size: 70%;
 }
 
 .coreia {
-  background-image: url("/img/Flag_of_South_Korea.svg.png");
+  background-image: url("../img/Flag_of_South_Korea.svg.png");
 }
 
 .china {
-  background-image: url("/img/china.png");
+  background-image: url("../img/china.png");
 }
